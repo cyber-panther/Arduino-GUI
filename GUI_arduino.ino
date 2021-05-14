@@ -3,7 +3,7 @@ int pin9 = 9;
 int pin10 = 10;
 int pin11 = 11;
 int operate;
-int time = 1;
+int time_keep = 1;
 
 void setup()
 {
@@ -23,7 +23,7 @@ void loop()
 
     if (operate <= 10)
     {
-      time = operate;
+      time_keep = operate;
     }
   }
 
@@ -75,6 +75,6 @@ void loop()
     break;
   }
 
-  delay(time * 1000);
+  delay(time_keep * 1000);
   operate = 555;
 }
